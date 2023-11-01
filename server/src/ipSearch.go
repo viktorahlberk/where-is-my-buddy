@@ -32,7 +32,7 @@ func PrintLocalIp() {
 			}
 
 			if ip.To4() != nil {
-				fmt.Println("Local IPv4-address:", ip.String())
+				fmt.Println("Server local IPv4-address:", ip.String())
 			} else {
 				// fmt.Println("Local IPv6-address:", ip.String())
 			}

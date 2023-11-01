@@ -12,6 +12,7 @@ import (
 )
 
 func main() {
+	fmt.Println("Starting a server...")
 	database.InitTables()
 	src.PrintLocalIp()
 
@@ -28,7 +29,7 @@ func main() {
 
 	// Start the server
 	port := 8080
-	fmt.Printf("Starting server on port %d...\n", port)
+	fmt.Printf("Server started on port %d.\n", port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), nil))
 }
 
